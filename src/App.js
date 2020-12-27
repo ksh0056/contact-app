@@ -5,10 +5,25 @@ import PhoneInfoList from './components/PhoneInfoList';
 
 class App extends Component {
 
-  id = 0;
+  id = 3;
   
   state = {
     information: [
+      {
+        id: 0,
+        name: '홍길동',
+        phone: '010-0000-0001'
+      },
+      {
+        id: 1,
+        name: '고길동',
+        phone: '010-0000-0001'
+      },
+      {
+        id: 2,
+        name: '김길동',
+        phone: '010-0000-0001'
+      },
     ]
   }
   

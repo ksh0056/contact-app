@@ -9,6 +9,8 @@ class PhoneInfoList extends Component {
     render() {
         const { data, onRemove, onUpdate } = this.props;
 
+        console.log('rendering list');  //업데이트 할때마다 리스트 전체를 새로 그리므로 shouldComponentUpdate를 이용하여 성능 최적화를 해야한다.
+
         const list = data.map(
             info => (
                 <PhoneInfo 
